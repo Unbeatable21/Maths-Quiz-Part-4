@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Multiplication Quiz</title>
+        <meta name = "viewport" contents = "width=device-width, initial-scale=1">
+        <link rel="stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src = "https://maxcdn.bootstrapcdn/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <link rel = "stylesheet" type = "text/css" href="style.css">
+        
+    </head>
+    <body>
+        <div class="container" id = "score_module" style="background-color: darkred;">
+            <h4 id = "player1" style="color: white;"></h4><span id = "player1score"></span>
+            <h4 id = "player2" style="color: white;"></h4><span id = "player2score"></span>
+        </div>
+        <div class="container" style="background-color:darkslategray;">
+            <center>
+                <h1 style = "color: white;">The Math Quiz Game</h1>
+                <br>
+                <h4 style="color: white;">Question Turn - </h4><h4 id = "question_turn" style="color: white;"></h4>
+                <br>
+                <h4 style="color: white;">Answer Turn - </h4><h4 id = "answer_turn" style="color: white;"></h4>
+            </center>
+        </div>
+        <div id = "output">
+            <center>
+            </center>
+        </div>
+
+        <center>
+            <h4 style="color: white;">First Number</h4>
+            <input type="text" id = "input_no1" placeholder="First Number">
+            <br>
+            <h4 style="color: white;">Second number</h4>
+            <input type = "text" id="input_no2" placeholder="Second Number">
+            <br>
+            <button onclick = Send() id = "sendbutton" style="font-size: 20px;" style="margin-bottom: 20px;">Send</button>
+        </center>
+
+        <script src = "main.js"></script>
+    </body>
+</html>
